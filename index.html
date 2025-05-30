@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup/Login UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form" id="signupForm">
+      <h2>Sign Up</h2>
+      <button class="social-btn">Sign up with Facebook</button>
+      <button class="social-btn">Sign up with Twitter</button>
+      <p>or sign up with email</p>
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <label><input type="checkbox" id="privacyPolicy"> I agree with privacy policy</label>
+      <button onclick="signup()">Sign Up</button>
+      <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+    </div>
+
+    <div class="form hidden" id="loginForm">
+      <h2>Login</h2>
+      <button class="social-btn">Login with Facebook</button>
+      <button class="social-btn">Login with Twitter</button>
+      <p>or login with email</p>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <a href="#" class="forgot">Forgot Password?</a>
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
